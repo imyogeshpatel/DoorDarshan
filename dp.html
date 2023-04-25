@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="dp.css">
+</head>
+
+<body>
+    <div id="section1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto" style="color: #f6bd60;">
+                        <a class="nav-link active" id="navItem1" href="#home">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                        <a class="nav-link" href="#placestogoSection" id="navItem2">Places to go</a>
+                        <a class="nav-link" href="#deliverySection" id="navItem3">About us</a>
+                        <a class="nav-link" href="#followusSection" id="navItem4">Follow Us</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-section-bg-container d-flex justify-content-center flex-column" id="home">
+
+
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images\rishikesh-4785189.png" class="d-block w-100 " alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images\vishnu-temple-2779856.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images\3479478.png" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="places-to-go-section pt-5 pb-5" id="placestogoSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="places-section-heading">Places To Go</h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow places-item-card p-3 mb-3">
+                            <img src="images\Shri Venkateshwara Swamy Vaari Temple.jpg" class="places-item-image w-100" />
+                            <h1 class="places-card-title">Venkateshwara Swamy Temple</h1>
+                            <a class="places-item-link" onclick="display('section2')">
+                                View 
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow places-item-card p-3 mb-3">
+                            <img src="images\Shri Vaishno Devi Temple.jpg" class="places-item-image w-100" />
+                            <h1 class="places-card-title">Shri Vaishno Devi Temple</h1>
+                            <a class="places-item-link" onclick="display('section3')">
+                            View 
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="places-item-card shadow p-3 mb-3">
+                            <img src="images\Omkareshwar Jyotirlinga.jpg" class="places-item-image w-100" />
+                            <h1 class="places-card-title">Omkareshwar Jyotirlinga</h1>
+                            <a class="places-item-link">
+                            View 
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="places-item-card shadow p-3 mb-3">
+                            <img src="images\Brihadeeswara Temple.jpg" class="places-item-image w-100" />
+                            <h1 class="places-card-title">Brihadeeswara Temple</h1>
+                            <a class="places-item-link" onclick="display('section4')">
+                            View 
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="places-item-card shadow p-3 mb-3">
+                            <img src="images\mahabalipuram.jpg" class="places-item-image w-100" />
+                            <h1 class="places-card-title">Mahabalipuram</h1>
+                            <a class="places-item-link" onclick="display('section6')">
+                            View 
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="places-item-card shadow p-3 mb-3">
+                            <img src="images\divine mercy church 2.jpg" class="places-item-image w-100" />
+                            <h1 class="places-card-title">Divine Mercy Church</h1>
+                            <a class="places-item-link" onclick="display('section5')">
+                            View 
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="places-item-card shadow p-3 mb-3">
+                            <img src="images\virupaksha temple.jpg" class="places-item-image w-100" />
+                            <h1 class="places-card-title">Virupaksha Temple</h1>
+                            <a class="places-item-link" onclick="display('section7')">
+                            View 
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="places-item-card shadow p-3 mb-3">
+                            <img src="images\kedarnath temple.jpg" class="places-item-image w-100" />
+                            <h1 class="places-card-title">Kedarnath Temple</h1>
+                            <a class="places-item-link">
+                            View 
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="delivery-and-payment-section pt-5 pb-5" id="deliverySection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 order-1 order-md-2">
+                        <div class="text-center">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png" class="delivery-and-payment-section-img" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 order-2 order-md-1">
+                        <h1 class="delivery-and-payment-section-heading">
+                            Delivery and Payment
+                        </h1>
+                        <p class="delivery-and-payment-section-description">
+                            Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive to your door. Plus, you get a 5% discount on every order every time you
+                            pay online.
+                        </p>
+                        <button class="custom-button">Order Now</button>
+                        <div class="mt-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-card-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thanking-customers-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                        <h1 class="thanking-customers-section-heading">
+                            Thank you for being a valuable customer to us.
+                        </h1>
+                        <p class="thanking-customers-section-description">
+                            We have a surprise gift for you
+                        </p>
+                        <div class="d-md-none">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                        </div>
+                        <div>
+                            <button class="custom-button">Redeem Gift</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 d-none d-md-block">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="follow-us-section pt-5 pb-5" id="followusSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="follow-us-section-heading">Follow Us</h1>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-twitter icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-instagram icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-facebook icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo2" />
+                        <h1 class="footer-section-mail-id">doordharshan@gmail.com</h1>
+                        <p class="footer-section-address">
+                            Akshaya Adora,Padur,Chennai,TN -603103
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto" style="color: #f6bd60;">
+                        <a class="nav-link active" id="navItem1" href="#home">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                        <a class="nav-link" href="#placestogoSection" id="navItem2">Places to go</a>
+                        <a class="nav-link" href="#deliverySection" id="navItem3">About us</a>
+                        <a class="nav-link" href="#followusSection" id="navItem4">Follow Us</a>
+                        <a class="nav-link" href="#signinsection" id="navItem5">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="detailed-view-bg-container">
+
+            <div class="detailed-view-card-container">
+                <div class="virtual-tour">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1678826895755!6m8!1m7!1sCAoSLEFGMVFpcE0wcmthSG1vSGp1LUVWMXYzT2ZqVDdrVmJSNDBQWmEwbjFVNzhR!2m2!1d13.6832968!2d79.3480525!3f69.81731564709202!4f5.33962511168798!5f0.7820865974627469" width="1500" height="1000"
+                        style="center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading"></h1>
+                    <p class="detailed-view-card-description">
+                        The Sri Venkateshvara Swami Vaari Temple is a Hindu temple situated in the hill town of Tirumala at Tirupati in Tirupati district of Andhra Pradesh, India. The Temple is dedicated to Venkateshvara, a form of Vishnu, who is believed to have appeared on
+                        the earth to save mankind from trials and troubles of Kali Yuga. Hence the place has also got the name Kaliyuga Vaikuntha and the deity here is referred to as Kaliyuga Prathyaksha Daivam. The temple is also known by other names
+                        like Tirumala Temple, Tirupati Temple and Tirupati Balaji Temple. Venkateshvara is known by many other names: Balaji, Govinda, and Srinivasa.[3] The temple is run by Tirumala Tirupati Devasthanams (TTD), which is under control
+                        of Andhra Pradesh Government. The head of TTD is appointed by Andhra Pradesh Government. Tirumala Hills are part of Seshachalam Hills range. The hills are 853 metres (2,799 ft) above sea level and comprise seven peaks, representing
+                        the seven heads of Adisesha. The temple lies on the seventh peak—Venkatadri, on the southern banks of Sri Swami Pushkarini, a holy water tank. Hence the temple is also referred to as "Temple of Seven Hills". Tirumala town covers
+                        an area of about 10.33 sq mi (26.75 km2). The Temple is constructed in South Indian architecture and is believed to be constructed over a period of time starting from 300 CE.[5] The Garbhagruha (Sanctum Sanctorum) is called Ananda
+                        Nilayam. The presiding deity, Venkateshvara, is in standing posture and faces east in Garbha Gruha. The temple follows Vaikhanasa Agama tradition of worship. The temple is one of the eight Vishnu Swayambhu Kshetras and is listed
+                        as the 75th Divya Desam. The Temple premises have two modern Queue complex buildings to manage the pilgrim crowd, Tarigonda Vengamamba Annaprasadam complex for free meals to Pilgrims, hair tonsure buildings and a number of pilgrim
+                        lodging sites. It is one of the richest temples in the world in terms of donations received and wealth. There are several legends associated with the manifestation of the deity in Tirumala. According to one legend, the temple has
+                        a murti of Venkateshvara, it is believed, which shall remain here for the entire duration of the present Kali Yuga.
+                    </p>
+                </div>
+            </div>
+            <div class="video-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <img src="images\venkateswara swamy temle.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <h1 class="video-section-heading">
+                                Sri Venkateshwara Swamy Abhishekam Video
+                            </h1>
+                            <p class="video-section-description">
+
+                            </p>
+                            <button class="button-video" onclick="window.location.href='https://www.youtube.com/watch?v=A4BMcE8D3wU&ab'">Play Video</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo2" />
+                            <h1 class="footer-section-mail-id">doordharshan@gmail.com</h1>
+                            <p class="footer-section-address">
+                                Akshaya Adora,Padur,Chennai,TN -603103
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto" style="color: #f6bd60;">
+                        <a class="nav-link active" id="navItem1" href="#home">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                        <a class="nav-link" href="#placestogoSection" id="navItem2">Places to go</a>
+                        <a class="nav-link" href="#deliverySection" id="navItem3">About us</a>
+                        <a class="nav-link" href="#followusSection" id="navItem4">Follow Us</a>
+                        <a class="nav-link" href="#signinsection" id="navItem5">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="detailed-view-bg-container">
+
+            <div class="detailed-view-card-container">
+                <div class="virtual-tour">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1678827360932!6m8!1m7!1sCAoSLEFGMVFpcFBFdXdJbmJYNGoyVWk4Z3lKc1c4MnR1a2FoN1JxaTVsOWg5QlFJ!2m2!1d33.0084156!2d74.9449104!3f326.18398096843777!4f14.49858456848709!5f0.7820865974627469" width="1500" height="1000"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading"></h1>
+                    <p class="detailed-view-card-description">
+                        The Vaishno Devi Temple also referred to as Shri Mata Vaishno Devi Temple and Vaishno Devi Bhavan is a prominent and widely revered Hindu temple dedicated to goddess Vaishno Devi. It is located in Katra, Reasi on the slopes of Trikuta Hills within the
+                        union territory of Jammu & Kashmir in India. The temple is recognized as one of the 108 Maha (major) Shakti Peethas dedicated to Durga, who is worshipped as Vaishno Devi. Having the principal aspect of Durga, hindus consider Vaishno
+                        Devi as an incarnation of Kali, Saraswati and Lakshmi. The temple is governed by the Shri Mata Vaishno Devi Shrine Board (SMVDSB), chaired by the Government of Jammu and Kashmir in August 1986. It is one of the most visited pilgrimage
+                        centers of India. Every year, millions of devotees visit the temple. During festivals like Navaratri, the footfall increases to as high as one crore. It is also one of the richest temples in India with annual receipts of almost
+                        16 billion dollars according to some authors. The temple is sacred to both Hindus and Sikhs. Many prominent saints such as Swami Vivekananda have visited the temple.
+                    </p>
+                </div>
+            </div>
+            <div class="video-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <img src="images\vaishno devi 2.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <h1 class="video-section-heading">
+                                Shri Vaishno Devi Temple
+                            </h1>
+                            <p class="video-section-description">
+
+                            </p>
+                            <button class="button-video" onclick="window.location.href='https://www.youtube.com/watch?v=Ca1tUjOW-bs&ab'">Play Video</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo2" />
+                            <h1 class="footer-section-mail-id">doordharshan@gmail.com</h1>
+                            <p class="footer-section-address">
+                                Akshaya Adora,Padur,Chennai,TN -603103
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto" style="color: #f6bd60;">
+                        <a class="nav-link active" id="navItem1" href="#home">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                        <a class="nav-link" href="#placestogoSection" id="navItem2">Places to go</a>
+                        <a class="nav-link" href="#deliverySection" id="navItem3">About us</a>
+                        <a class="nav-link" href="#followusSection" id="navItem4">Follow Us</a>
+                        <a class="nav-link" href="#signinsection" id="navItem5">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="detailed-view-bg-container">
+
+            <div class="detailed-view-card-container">
+                <div class="virtual-tour">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1678827024760!6m8!1m7!1sCAoSLEFGMVFpcE9TQmJYWElCd2hPWVpIU3JuQXd0dVNmNzFBMzJ0d2FrbFBTX29a!2m2!1d10.78278280515907!2d79.13184630134475!3f251.5580216810447!4f4.771430559823969!5f0.7820865974627469" width="1500"
+                        height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading"></h1>
+                    <p class="detailed-view-card-description">
+                        Brihadishvara Temple, called Rajarajesvaram ('Lord of Rajaraja') by its builder, and known locally as Thanjai Periya Kovil ('Thanjavur Big Temple') and Peruvudaiyar Kovil, is a Shaivite Hindu temple built in a Chola architectural style located on the
+                        south bank of the Cauvery river in Thanjavur, Tamil Nadu, India. It is one of the largest Hindu temples and an exemplar of Tamil architecture. It is also called Dakshina Meru (Meru of the South). Built by Chola emperor Rajaraja
+                        I between 1003 and 1010 CE, the temple is a part of the UNESCO World Heritage Site known as the "Great Living Chola Temples", along with the hola-era Gangaikonda Cholapuram temple and Airavatesvara temple, which are about 70 kilometres
+                        (43 mi) and 40 kilometres (25 mi) to its northeast respectively. The original monuments of this 11th-century temple were built around a moat. It included gopura, the main temple, its massive tower, inscriptions, frescoes, and sculptures
+                        predominantly related to Shaivism, but also of Vaishnavism and Shaktism. The temple was damaged in its history and some artwork is now missing. Additional mandapam and monuments were added in the centuries that followed. The temple
+                        now stands amidst fortified walls that were added after the 16th century.
+                    </p>
+                </div>
+            </div>
+            <div class="video-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <img src="images\brihadeeswara 2.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <h1 class="video-section-heading">
+                                Brihadeeswara temple
+                            </h1>
+                            <p class="video-section-description">
+
+                            </p>
+                            <button class="button-video" onclick="window.location.href='https://www.youtube.com/watch?v=uh6MPY92MAk&ab'">Play Video</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo2" />
+                            <h1 class="footer-section-mail-id">doordharshan@gmail.com</h1>
+                            <p class="footer-section-address">
+                                Akshaya Adora,Padur,Chennai,TN -603103
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto" style="color: #f6bd60;">
+                        <a class="nav-link active" id="navItem1" href="#home">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                        <a class="nav-link" href="#placestogoSection" id="navItem2">Places to go</a>
+                        <a class="nav-link" href="#deliverySection" id="navItem3">About us</a>
+                        <a class="nav-link" href="#followusSection" id="navItem4">Follow Us</a>
+                        <a class="nav-link" href="#signinsection" id="navItem5">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="detailed-view-bg-container">
+
+            <div class="detailed-view-card-container">
+                <div class="virtual-tour">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1681883956129!6m8!1m7!1sCAoSLEFGMVFpcE5uczA2aUc2c0FycXBHLVNmMWdXbGptMVBsd2dRNk1qd0FSVUgz!2m2!1d12.7867775!2d80.22536029999999!3f31.645155726914385!4f9.898875024849616!5f0.7820865974627469" width="1500"
+                        height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading"></h1>
+                    <p class="detailed-view-card-description">
+                        It is Divine. You would never believe that a massive Church dedicated to the Divine Mercy - built to traditional European standards will be located just near Kovalam or Kelambakkam in Chennai. The Divine Mercy Church is massive whichever way you look
+                        at it. The foundation stone for this edifice was laid on 14th June 2015 by the Most Rev.Dr. Neethinathan, the Bishop of Chengelpet to commemorate the 175th anniversary of the first landing of the Missionaries of St. Francis de
+                        Sales (MSFS) in Pondicherry, India. The church was dedicated after its completion on 13-2-2021 by the same Bishop. With that part of history out of the way, we can take a look at the grand Divine Mercy Church in ECR. From the outside,
+                        the Church looks huge - almost like the Churches in Goa. Once inside, you will gasp at the long columns made of immaculate white marbles adorning the huge altar containing the original image of the Divine Mercy of Jesus as he appeared
+                        to Saint Faustina Kowalska. You appear so small and diminutive against the gold rimmed image of the Divine Mercy of Jesus. If you visit the church during week days, you can pray peacefully as the massive Church is all yours. You
+                        have to give the credit to the Bishop of Chengelpet , the Most Rev. Dr. Neethinathan for initiating such grand churches around Chennai.
+                    </p>
+                </div>
+            </div>
+            <div class="video-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <img src="images\divine mercy church.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <h1 class="video-section-heading">
+                                Divine Mercy Church
+                            </h1>
+                            <p class="video-section-description">
+
+                            </p>
+                            <button class="button-video" onclick="window.location.href='https://www.youtube.com/watch?v=LTiwXN1LokM&ab'">Play Video</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo2" />
+                            <h1 class="footer-section-mail-id">doordharshan@gmail.com</h1>
+                            <p class="footer-section-address">
+                                Akshaya Adora,Padur,Chennai,TN -603103
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="section6">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto" style="color: #f6bd60;">
+                        <a class="nav-link active" id="navItem1" href="#home">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                        <a class="nav-link" href="#placestogoSection" id="navItem2">Places to go</a>
+                        <a class="nav-link" href="#deliverySection" id="navItem3">About us</a>
+                        <a class="nav-link" href="#followusSection" id="navItem4">Follow Us</a>
+                        <a class="nav-link" href="#signinsection" id="navItem5">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="detailed-view-bg-container">
+
+            <div class="detailed-view-card-container">
+                <div class="virtual-tour">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1681883754983!6m8!1m7!1sCAoSLEFGMVFpcE1kM09KY09NbG9OUU1McDVsYnJSODVQN3BjbF96UmRjaDJONk10!2m2!1d12.6164819!2d80.1992004!3f116.38254612632218!4f-5.068588051205168!5f0.7820865974627469" width="1500" height="1000"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading"></h1>
+                    <p class="detailed-view-card-description">
+                        At a distance of 2 km from Mahabalipuram Bus Station, the Shore Temple is an ancient temple situated on the shore of Bay of Bengal in Mahabalipuram. It is one of the most photographed monuments of heritage in India, and among the must-visit Mahabalipuram
+                        tourist places. Shore Temple was built in the 7tcentury CE by Pallavas during the reign of Narasimhavarman. It is one of the oldest temples in South India constructed in the Dravidian style and depicts the royal taste of the Pallava
+                        dynasty. It has been classified as a UNESCO World Heritage Site as part of the 'Group of Monuments at Mahabalipuram'. It is one of the must include places in Mahabalipuram trip. Shore Temple is a structural temple built with blocks
+                        of granite. It is so named because it overlooks the Bay of Bengal. The Shore Temple is a five-storeyed structural Hindu temple rather than rock-cut as are the other monuments at the site. It is the earliest important structural
+                        temple in Southern India. Its pyramidal structure is 60 ft high and sits on a 50 ft square platform. There is a small temple in front which was the original porch. It is claimed to be a part of Seven Pagodas by the legends and
+                        is one of the finest places to visit in Mahabalipuram. This temple has three shrines where two of which are dedicated to Lord Shiva and the other one is dedicated to Lord Vishnu. The place is very clean and its location made it
+                        a major attraction among the tourists. Shore Temple is located at the shore of Bay of Bengal which offers a beautiful view of the never-ending ocean.
+                    </p>
+                </div>
+            </div>
+            <div class="video-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <img src="images\shore temple.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <h1 class="video-section-heading">
+                                Shore Temple Mahabalipuram
+                            </h1>
+                            <p class="video-section-description">
+
+                            </p>
+                            <button class="button-video" onclick="window.location.href='https://www.youtube.com/watch?v=xdArSf1eM3Q&ab'">Play Video</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo2" />
+                            <h1 class="footer-section-mail-id">doordharshan@gmail.com</h1>
+                            <p class="footer-section-address">
+                                Akshaya Adora,Padur,Chennai,TN -603103
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="section7">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto" style="color: #f6bd60;">
+                        <a class="nav-link active" id="navItem1" href="#home">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                        <a class="nav-link" href="#placestogoSection" id="navItem2">Places to go</a>
+                        <a class="nav-link" href="#deliverySection" id="navItem3">About us</a>
+                        <a class="nav-link" href="#followusSection" id="navItem4">Follow Us</a>
+                        <a class="nav-link" href="#signinsection" id="navItem5">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="detailed-view-bg-container">
+
+            <div class="detailed-view-card-container">
+                <div class="virtual-tour">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1681883874102!6m8!1m7!1sCAoSLEFGMVFpcE9mNFk5cnViaHl3X09HVnlSSDBMRDZLcERuVllTWF9keGJOanpl!2m2!1d15.3351865!2d76.4596919!3f18.422310968366336!4f14.2260147837992!5f0.7820865974627469" width="1500" height="1000"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading"></h1>
+                    <p class="detailed-view-card-description">
+                        Virupaksha Temple is located in Hampi in the Vijayanagara district of Karnataka, India. It is part of the Group of Monuments at Hampi, designated as a UNESCO World Heritage Site. The temple is dedicated to Sri Virupaksha, a form of Shiva. The temple was
+                        built by Lakkan Dandesha, a nayaka (chieftain) under the ruler Deva Raya II also known as Prauda Deva Raya of the Vijayanagara Empire. Hampi, capital of the Vijayanagara empire, sits on the banks of the Tungabhadra River (Pampa
+                        hole/Pampa river). Virupaksha Temple is the main center of pilgrimage (ತೀರ್ಥಯಾತ್ರೆ )at Hampi, and had been considered the most sacred sanctuary over the centuries. It is intact among the surrounding ruins and is still used in worship
+                        . The temple is dedicated to Lord Shiva, known here as Virupaksha/Pampa pathi, as the consort of the local goddess Pampadevi who is associated with the Tungabhadra River. There is also a Virupakshini Amma temple (mother goddess)
+                        in a village called Nalagamapalle, Chittoor district, Andhra Pradesh, approximately 100 km from Tirupati.
+                    </p>
+                </div>
+            </div>
+            <div class="video-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <img src="images\virupaksha temple2.jpg" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <h1 class="video-section-heading">
+                                Virupaksha Temple
+                            </h1>
+                            <p class="video-section-description">
+
+                            </p>
+                            <button class="button-video" onclick="window.location.href='https://www.youtube.com/watch?v=BvYvEZfYd3M&ab'">Play Video</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="images\DoorDarshanLogo 1.png" class="door-dharshan-logo2" />
+                            <h1 class="footer-section-mail-id">doordharshan@gmail.com</h1>
+                            <p class="footer-section-address">
+                                Akshaya Adora,Padur,Chennai,TN -603103
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
